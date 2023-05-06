@@ -28,7 +28,7 @@ if (!surface_exists(window_surface) && width > 0 && height > 7)
 				
 				//surface_set_target(temp_surface);
 				
-				with current_widget { draw_widget(other.pos_x + 3, last_y, other.pos_x + width - 4, current_widget.length); };
+				with current_widget { draw_widget(other.width/2, other.widget_padding + last_y); };
 				
 				//surface_reset_target();
 				//surface_set_target(window_surface);
